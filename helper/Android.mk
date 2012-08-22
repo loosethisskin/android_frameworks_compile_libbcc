@@ -53,6 +53,7 @@ LOCAL_IS_HOST_MODULE := true
 
 LOCAL_CFLAGS += $(libbcc_CFLAGS)
 LOCAL_CFLAGS += -D__HOST__
+LOCAL_CFLAGS += -fno-strict-aliasing
 
 LOCAL_C_INCLUDES := $(libbcc_C_INCLUDES)
 
