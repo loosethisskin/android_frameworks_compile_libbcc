@@ -58,6 +58,7 @@ intermediates := $(local-intermediates-dir)
 LOCAL_SRC_FILES := $(libbcinfo_SRC_FILES)
 
 LOCAL_CFLAGS += $(local_cflags_for_libbcinfo)
+LOCAL_CFLAGS += -fno-strict-aliasing
 
 LOCAL_C_INCLUDES := $(libbcinfo_C_INCLUDES)
 
@@ -77,6 +78,7 @@ LOCAL_IS_HOST_MODULE := true
 LOCAL_SRC_FILES := $(libbcinfo_SRC_FILES)
 
 LOCAL_CFLAGS += $(local_cflags_for_libbcinfo)
+LOCAL_CFLAGS += -fno-strict-aliasing
 
 LOCAL_C_INCLUDES := $(libbcinfo_C_INCLUDES)
 
